@@ -133,6 +133,21 @@ db-mcp/
 - `npm run dev`: Startet den Server im Entwicklungsmodus mit automatischem Neuladen
 - `npm test`: Führt Tests aus
 
+## Erweiterbarkeit
+
+Potenzielle Erweiterungen
+1. Datenverarbeitung und -anreicherung
+   - Semantische Fahrplandatenverarbeitung: XML zu strukturiertem JSON mit semantischer Anreicherung
+   - Historische Datenanalyse für Verspätungen und Betriebsstörungen
+   - Integration multimodaler Verkehrsverbindungen
+2. Erweiterte MCP-Tools
+   - Routenplanung zwischen Stationen
+   - KI-basierte Verspätungs- und Auslastungsprognosen
+   - Reisestörungsanalyse
+   - Barrierefreiheitscheck für Stationen und Verbindungen
+
 ## Lizenz
 
-MIT 
+MCP Server: [MIT Lizenz](LICENSE)
+
+DB Timetable API: [Creative Commons Namensnennung 4.0 International Lizenz](https://developers.deutschebahn.com/db-api-marketplace/apis/product/timetables)
