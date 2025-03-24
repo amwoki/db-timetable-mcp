@@ -19,7 +19,8 @@ export interface StationResourceArgs {
 export const currentTimetableResource = {
 	uriTemplate: "db-api:timetable/current/{evaNo}",
 	name: "Aktuelle Fahrplandaten",
-	description: "Aktuelle Fahrplandaten für eine Bahnhofsstation",
+	description:
+		"Aktuelle Fahrplandaten für eine Bahnhofsstation mit Informationen zu Ankunfts- und Abfahrtszeiten, Gleisen, Verspätungen und anderen relevanten Betriebsinformationen. Die Daten werden in Echtzeit von der DB Timetable API abgerufen und im XML-Format bereitgestellt.",
 	mimeType: "application/xml",
 	arguments: [
 		{
@@ -53,7 +54,8 @@ export const currentTimetableResource = {
 export const recentChangesResource = {
 	uriTemplate: "db-api:timetable/changes/{evaNo}",
 	name: "Aktuelle Fahrplanänderungen",
-	description: "Aktuelle Änderungen für eine Bahnhofsstation",
+	description:
+		"Enthält aktuelle Fahrplanänderungen in Echtzeit für eine bestimmte Bahnhofsstation. Dies umfasst Informationen zu Verspätungen, Gleisänderungen, Ausfällen und andere relevante betriebliche Anpassungen. Die Daten werden von der DB Timetable API im XML-Format abgerufen.",
 	mimeType: "application/xml",
 	arguments: [
 		{

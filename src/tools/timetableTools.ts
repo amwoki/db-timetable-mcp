@@ -39,7 +39,8 @@ const StationParamsSchema = z.object({
 
 export const getCurrentTimetableTool = {
 	name: "getCurrentTimetable",
-	description: "Ruft aktuelle Fahrplandaten für eine Bahnhofsstation ab",
+	description:
+		"Ruft die aktuellen Fahrplandaten einer bestimmten Bahnhofsstation ab. Dies beinhaltet Informationen zu Ankunfts- und Abfahrtszeiten, Gleisbelegungen, Verspätungen und weitere Echtzeitinformationen für den aktuellen Betriebstag.",
 	parameters: TimetableParamsSchema,
 	execute: asyncErrorHandler(async (args) => {
 		logger.info("Rufe aktuelle Fahrplandaten ab", args as LogMetadata);
@@ -61,7 +62,8 @@ export const getCurrentTimetableTool = {
 
 export const getRecentChangesTool = {
 	name: "getRecentChanges",
-	description: "Ruft aktuelle Änderungen für eine Bahnhofsstation ab",
+	description:
+		"Ermittelt die neuesten Fahrplanänderungen für eine spezifische Bahnhofsstation. Dazu gehören Verspätungen, Gleisänderungen, Ausfälle und andere kurzfristige Anpassungen im Betriebsablauf, die in Echtzeit aktualisiert werden.",
 	parameters: TimetableParamsSchema,
 	execute: asyncErrorHandler(async (args) => {
 		logger.info("Rufe aktuelle Änderungen ab", args as LogMetadata);
@@ -82,7 +84,7 @@ export const getRecentChangesTool = {
 export const getPlannedTimetableTool = {
 	name: "getPlannedTimetable",
 	description:
-		"Ruft geplante Fahrplandaten für eine bestimmte Station und Zeitspanne ab",
+		"Holt die geplanten Fahrplandaten für eine angegebene Bahnhofsstation zu einem bestimmten Datum und einer bestimmten Stunde ein. Diese Funktion ist nützlich, um Fahrpläne im Voraus zu planen und Informationen über zukünftige Zugverbindungen zu erhalten.",
 	parameters: PlanParamsSchema,
 	execute: asyncErrorHandler(async (args) => {
 		logger.info("Rufe geplante Fahrplandaten ab", args as LogMetadata);
@@ -102,7 +104,8 @@ export const getPlannedTimetableTool = {
 
 export const findStationsTool = {
 	name: "findStations",
-	description: "Sucht nach Bahnhofsstationen anhand eines Musters",
+	description:
+		"Durchsucht das Verzeichnis der Bahnhofsstationen anhand eines gegebenen Suchmusters. Dies kann der Name der Station oder die EVA-Nummer sein. Das Tool liefert eine Liste von Stationen, die dem Suchmuster entsprechen.",
 	parameters: StationParamsSchema,
 	execute: asyncErrorHandler(async (args) => {
 		logger.info("Suche nach Stationen", args as LogMetadata);
