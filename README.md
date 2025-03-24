@@ -2,6 +2,9 @@
 
 Ein Model Context Protocol (MCP) Server für die Deutsche Bahn Timetable API. Der Server bietet MCP-Tools und -Ressourcen, um auf Fahrplandaten, Stationsinformationen und Zugänderungen zuzugreifen.
 
+Dieses Projekt verwendet Fahrplandaten der Deutschen Bahn, bereitgestellt unter der [Creative Commons Attribution 4.0 International Lizenz (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+
 ## Funktionen
 
 - **Aktuelle Fahrplände**: Abrufen aktueller Fahrplandaten für eine Station
