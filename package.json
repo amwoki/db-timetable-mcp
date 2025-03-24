@@ -1,0 +1,38 @@
+{
+	"name": "db-mcp",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"dev": "tsm --transpile-only src/index.ts",
+		"test": "vitest run",
+		"lint": "eslint src --ext .ts"
+	},
+	"keywords": [
+		"mcp",
+		"deutsche-bahn",
+		"timetable",
+		"api-client"
+	],
+	"author": "Nils Jorek <nils.jorek@gmail.com>",
+	"license": "MIT",
+	"description": "MCP Server für die Deutsche Bahn Timetable API",
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"fastmcp": "^1.20.5",
+		"node-fetch": "^2.7.0",
+		"zod": "^3.24.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/node": "^22.13.11",
+		"@types/node-fetch": "^2.6.12",
+		"@vitest/coverage-v8": "^3.0.9",
+		"eslint": "^8.57.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.2",
+		"vitest": "^3.0.9"
+	}
+}
