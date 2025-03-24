@@ -18,7 +18,7 @@ for (const tool of tools) {
 for (const resource of resources) {
 	logger.info(`Ressource hinzugefügt: ${resource.name}`);
 	// @ts-ignore
-	server.addResource(resource);
+	server.addResourceTemplate(resource);
 }
 
 logger.info(`Starte ${config.server.name} v${config.server.version}`);

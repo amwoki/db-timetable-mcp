@@ -12,6 +12,7 @@
 		"dev": "node --loader ts-node/esm src/index.ts",
 		"dev:sse": "cross-env TRANSPORT_TYPE=sse node --loader ts-node/esm src/index.ts",
 		"test": "vitest run",
+		"test-ci": "vitest run --coverage.enabled --coverage.reporter='text-summary'",
 		"lint": "npx biome check src",
 		"coverage": "npm run test -- --coverage"
 	},
