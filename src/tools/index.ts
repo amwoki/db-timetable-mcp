@@ -1,8 +1,8 @@
 import {
-	getCurrentTimetableTool,
-	getRecentChangesTool,
-	getPlannedTimetableTool,
 	findStationsTool,
+	getCurrentTimetableTool,
+	getPlannedTimetableTool,
+	getRecentChangesTool,
 } from "../tools/timetableTools.js";
 
 export const tools = [

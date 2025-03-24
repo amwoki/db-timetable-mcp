@@ -1,11 +1,11 @@
 import {
-	currentTimetableResource,
-	recentChangesResource,
-	plannedTimetableResource,
-	stationResource,
-	TimetableResourceArgs,
 	PlannedTimetableResourceArgs,
 	StationResourceArgs,
+	TimetableResourceArgs,
+	currentTimetableResource,
+	plannedTimetableResource,
+	recentChangesResource,
+	stationResource,
 } from "./timetableResources.js";
 
 export const resources = [

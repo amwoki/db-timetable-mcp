@@ -1,10 +1,6 @@
 import fetch from "node-fetch";
-import type {
-	TimetableParams,
-	PlanParams,
-	StationParams,
-} from "./types.js";
 import config from "../config.js";
+import type { PlanParams, StationParams, TimetableParams } from "./types.js";
 
 /**
  * API-Client für die DB Timetable API

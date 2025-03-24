@@ -2,7 +2,7 @@ import { describe, test, expect, vi, beforeEach } from 'vitest';
 import { getCurrentTimetableTool, getRecentChangesTool, getPlannedTimetableTool, findStationsTool } from '../tools/timetableTools.js';
 import { timetableApi } from '../api/timetableApi.js';
 
-vi.mock('@/api/timetableApi.js', () => ({
+vi.mock('../api/timetableApi.js', () => ({
     timetableApi: {
         getCurrentTimetable: vi.fn().mockResolvedValue('<timetable>Current Data</timetable>'),
         getRecentChanges: vi.fn().mockResolvedValue('<timetable>Recent Changes</timetable>'),

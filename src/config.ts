@@ -1,6 +1,6 @@
-import dotenv from "dotenv";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import dotenv from "dotenv";
 
 // Lade Umgebungsvariablen
 const __filename = fileURLToPath(import.meta.url);

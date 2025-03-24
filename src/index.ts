@@ -1,7 +1,7 @@
 import { FastMCP } from "fastmcp";
 import { config } from "./config.js";
-import { tools } from "./tools/index.js";
 import { resources } from "./resources/index.js";
+import { tools } from "./tools/index.js";
 import { logger } from "./utils/logger.js";
 
 const server = new FastMCP({

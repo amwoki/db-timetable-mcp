@@ -1,12 +1,12 @@
 import { z } from "zod";
 import { timetableApi } from "../api/timetableApi.js";
-import { logger, type LogMetadata } from "../utils/logger.js";
-import { asyncErrorHandler, ValidationError } from "../utils/errorHandling.js";
 import type {
-	TimetableParams,
 	PlanParams,
 	StationParams,
+	TimetableParams,
 } from "../api/types.js";
+import { ValidationError, asyncErrorHandler } from "../utils/errorHandling.js";
+import { type LogMetadata, logger } from "../utils/logger.js";
 
 const TimetableParamsSchema = z.object({
 	evaNo: z

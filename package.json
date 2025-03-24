@@ -8,14 +8,10 @@
 		"start": "node dist/index.js",
 		"dev": "tsm --transpile-only src/index.ts",
 		"test": "vitest run",
-		"lint": "eslint src --ext .ts"
+		"lint": "npx biome check src",
+		"coverage": "npm run test -- --coverage"
 	},
-	"keywords": [
-		"mcp",
-		"deutsche-bahn",
-		"timetable",
-		"api-client"
-	],
+	"keywords": ["mcp", "deutsche-bahn", "timetable", "api-client"],
 	"author": "Nils Jorek <nils.jorek@gmail.com>",
 	"license": "MIT",
 	"description": "MCP Server für die Deutsche Bahn Timetable API",
