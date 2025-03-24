@@ -11,13 +11,13 @@ const server = new FastMCP({
 
 for (const tool of tools) {
 	logger.info(`Tool hinzugefügt: ${tool.name}`);
-	// @ts-ignore - FastMCP-Typendefinitionen haben möglicherweise Kompatibilitätsprobleme
+	// @ts-ignore
 	server.addTool(tool);
 }
 
 for (const resource of resources) {
 	logger.info(`Ressource hinzugefügt: ${resource.name}`);
-	// @ts-ignore - FastMCP-Typendefinitionen haben möglicherweise Kompatibilitätsprobleme
+	// @ts-ignore
 	server.addResourceTemplate(resource);
 }
 
