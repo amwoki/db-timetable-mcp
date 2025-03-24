@@ -1,3 +1,4 @@
+[![smithery badge](https://smithery.ai/badge/@jorekai/db-timetable-mcp)](https://smithery.ai/server/@jorekai/db-timetable-mcp)
 # DB Timetable MCP Server
 
 Ein Model Context Protocol (MCP) Server für die Deutsche Bahn Timetable API. Der Server bietet MCP-Tools und -Ressourcen, um auf Fahrplandaten, Stationsinformationen und Zugänderungen zuzugreifen.
