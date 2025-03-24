@@ -7,6 +7,7 @@
 		"build": "tsc",
 		"start": "node dist/index.js",
 		"dev": "node --loader ts-node/esm src/index.ts",
+		"dev:sse": "cross-env TRANSPORT_TYPE=sse node --loader ts-node/esm src/index.ts",
 		"test": "vitest run",
 		"lint": "npx biome check src",
 		"coverage": "npm run test -- --coverage"
