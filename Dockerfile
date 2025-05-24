@@ -8,7 +8,8 @@ COPY package*.json ./
 COPY tsconfig.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+# RUN npm ci --only=production
+RUN npm install --only=production
 
 # Copy source files
 COPY . .
@@ -25,3 +26,4 @@ CMD ["node", "dist/index.js"]
 
 
 # Commin-Message: remove package-lock.json from Dockerfile
+# Commin-Message: RUN npm install --only=production
