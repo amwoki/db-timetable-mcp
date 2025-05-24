@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
-COPY package-lock.json ./
+# COPY package-lock.json ./
 COPY tsconfig.json ./
 
 # Install dependencies
@@ -24,3 +24,4 @@ ENV TRANSPORT_TYPE=stdio
 CMD ["node", "dist/index.js"]
 
 
+# Commin-Message: remove package-lock.json from Dockerfile
